@@ -1,0 +1,19 @@
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+main {
+    padding: 16px;
+}
+
+footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+img {
+    height: 200px;
+}
