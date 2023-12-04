@@ -8,11 +8,18 @@ nav {
     padding: 16px;
     border-bottom: 1px solid black;
     color: white;
-    background: darkgreen;
+    background:darkgreen;
 }
 
 .white-over-dark-b {
     color: white;
+}
+
+.white-over-dark-b:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 10px 5px 5px white;
+    border-radius: 5px;
 }
 
 main {
@@ -20,13 +27,16 @@ main {
     margin-bottom: 10px;
 }
 
+
 footer {
     padding-top: 24px;
     padding-bottom: 24px;
-    padding-left: 0px;
+    padding-left: 24px;
     padding-right: 0px;
     position: sticky;
     bottom: 0px;
+    background-color: rgb(6, 161, 6);
+    color: white;
 }
 
 img {
@@ -39,25 +49,65 @@ a {
 }
 
 a:hover {
-    color: lightgreen;
+    color: purple;
+    box-shadow: 10px 5px 5px purple;
+    border-radius: 5px;
 }
 
 h1 {
     color: darkgreen;
     font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+
+}
+
+#title {
+    text-align: center;
+
+}
+
+@keyframes slidein {
+    from {
+      transform: translateX(0%);
+    }
+
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+#title:hover {
+    animation-name: slidein;
+}
+
+#subtitle {
+    text-align: center;
 }
 
 h2 {
     font-weight: bold;
+
 }
 
+h3 {
+    font-variant: small-caps;
+}
 /* Grid layout */
 .four-col-grid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-
+    margin: 20px;
+    /* perspective: 500px; */
 }
 
-.recipe-img-rating {
+/* .box:hover {
+    transition: transform 1s ease;
+    transform: rotateY(-60deg);
+    perspective: 500px;
+} */
 
+/* Striped Table */
+.striped-table> tr:nth-child(even) {
+    background-color: lightgray;
 }
