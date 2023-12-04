@@ -41,6 +41,8 @@ footer {
 
 img {
     height: 200px;
+    box-shadow: 7px 10px 10px 0px black;
+    border-radius: 3em;
 }
 
 a {
@@ -101,11 +103,13 @@ h3 {
     /* perspective: 500px; */
 }
 
-/* .box:hover {
-    transition: transform 1s ease;
+.box {
+    /* transition: transform 1s ease;
     transform: rotateY(-60deg);
-    perspective: 500px;
-} */
+    perspective: 500px; */
+    margin: auto;
+}
+
 
 /* Striped Table */
 .striped-table> tr:nth-child(even) {
