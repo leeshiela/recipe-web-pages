@@ -7,6 +7,12 @@ body {
 nav {
     padding: 16px;
     border-bottom: 1px solid black;
+    color: white;
+    background: darkgreen;
+}
+
+.white-over-dark-b {
+    color: white;
 }
 
 main {
@@ -29,8 +35,29 @@ img {
 
 a {
     text-decoration: none;
+    color: green
 }
 
 a:hover {
-    color: green;
+    color: lightgreen;
+}
+
+h1 {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* Grid layout */
+.four-col-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+}
+
+.recipe-img-rating {
+
 }
